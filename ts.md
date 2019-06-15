@@ -1,0 +1,57 @@
+{
+   "name": "development",
+   "version": "1.0.0",
+   "main": "webpack.config.js",
+   "scripts": {
+      "start": "webpack-dev-server --content-base src/",
+      "build": "webpack",
+      "server": "webpack-dev-server",
+      "dev": "webpack-dev-server --content-base src/"
+   },
+   "author": "",
+   "license": "ISC",
+   "description": "npm init 生成 package.json 文件.\r 安装各种需要的依赖:\r npm install --save react - 安装React.\r npm install --save react-dom 安装React Dom,这个包是用来处理virtual DOM。这里提一下用React Native的话，这里就是安装react-native。\r npm install --save-dev webpack - 安装Webpack, 现在最流行的模块打包工具.\r npm install --save-dev webpack-dev-server - webpack官网出的一个小型express服务器，主要特性是支持热加载.\r npm install --save-dev babel-core - 安装Babel, 可以把ES6转换为ES5，注意Babel最新的V6版本分为babel-cli和babel-core两个模块，这里只需要用babel-cor即可。",
+   "dependencies": {
+      "@types/react-dom": "^16.0.7",
+      "antd": "^3.8.2",
+      "babel-polyfill": "^6.26.0",
+      "babel-runtime": "^6.26.0",
+      "babylonjs": "^3.2.0",
+      "babylonjs-gui": "^3.2.0",
+      "cannon": "^0.6.2",
+      "earcut": "^2.1.3",
+      "oimo": "^1.0.9",
+      "react": "^16.4.2",
+      "react-dom": "^16.4.2",
+      "ts-loader": "^4.5.0",
+      "webpack-cli": "^3.1.0",
+      "webpack-command": "^0.4.1"
+   },
+   "devDependencies": {
+      "@types/react": "^16.4.11",
+      "awesome-typescript-loader": "^5.2.0",
+      "babel-core": "^6.26.3",
+      "babel-loader": "^7.1.5",
+      "babel-plugin-import": "^1.8.0",
+      "babel-plugin-transform-runtime": "^6.23.0",
+      "babel-preset-es2015": "^6.24.1",
+      "babel-preset-react": "^6.24.1",
+      "babel-preset-stage-2": "^6.24.1",
+      "open-browser-webpack-plugin": "0.0.5",
+      "source-map-loader": "^0.2.4",
+      "typescript": "^3.0.1",
+      "webpack": "^4.16.5",
+      "webpack-dev-server": "^3.1.5"
+   },
+   "compilerOptions": {
+      "outDir": "./dist/",
+      "sourceMap": true,
+      "noImplicitAny": true,
+      "module": "commonjs",
+      "target": "es5",
+      "jsx": "react"
+   },
+   "include": [
+      "./src/**/*"
+   ]
+}
